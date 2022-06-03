@@ -1,0 +1,82 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+*/
+
+@import "tailwindcss/base";
+
+
+h2{
+    @apply font-serif font-bold text-4xl lg:text-5xl text-indigo-700 leading-none;
+}
+
+h3{
+    @apply font-serif text-4xl text-indigo-700;
+}
+
+h4 {
+    @apply text-articleHead font-bold font-serif text-indigo-700 leading-11;
+}
+
+blockquote {
+    @apply text-base 2xl:text-lg italic text-indigo-700 pl-6 my-8 border-l-4 border-indigo-700;
+}
+
+#menu_content {
+    background-color: white;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+}
+
+/*article component*/
+
+.article__content h3 {
+    @apply mt-6 text-2xl text-indigo-900 font-mono opacity-75 xl:text-3xl;
+}
+
+.article__content p {
+    @apply mt-3 text-lg font-light text-black leading-normal tracking-normal font-mono opacity-75 md:text-xl;
+}
+
+.article__content ul {
+    @apply ml-3;
+}
+
+.article__content ul li {
+    @apply list-inside text-lg font-light text-gray-800 leading-normal tracking-normal font-mono md:text-xl;
+
+}
+
+
+/*gallery component*/
+.gallery-image {
+    @apply block relative h-full overflow-hidden shadow transition-transform ease-in-out duration-300 rounded-lg;
+}
+
+.gallery-image:hover {
+    transform: scale(1.02);
+    @apply shadow-md;
+}
+
+.gallery-image img {
+    position: relative;
+    @apply md:absolute md:top-0 md:left-0 md:min-h-full md:max-w-full;
+}
+
+
+@import "tailwindcss/components";
+@import "components/menu-button.css";
+@import "components/dropdown.css";
+@import "components/navigation.css";
+
+
+@import "vendor/cookieconsent.css";
+@import "vendor/choices.css";
+@import "vendor/photoswipe.css";
+
+@import "tailwindcss/utilities";
+@import "utility/animations.css";
+@import "utility/custom-utilities.css";
+
+
+
